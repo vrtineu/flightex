@@ -13,4 +13,19 @@ defmodule Flightex.Bookings.Booking do
        local_destination: local_destination
      }}
   end
+
+  def validate_complete_date(complete_date) do
+    if is_naive_datetime(complete_date) do
+      {:ok, complete_date}
+    else
+      {:error, "complete_date must be a NaiveDateTime"}
+    end
+  end
+
+  defp is_naive_datetime(complete_date) do
+    case complete_date do
+      %NaiveDateTime{} -> true
+      _ -> false
+    end
+  end
 end
