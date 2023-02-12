@@ -6,23 +6,30 @@
     {
       "describe": "build/4",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/users_test.exs",
+      "line": 22,
+      "module": "Elixir.Flightex.Users.UserTest",
+      "test": "test build/4 when cpf is a integer"
+    },
+    {
+      "describe": "build/4",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/users_test.exs",
       "line": 9,
       "module": "Elixir.Flightex.Users.UserTest",
       "test": "test build/4 when all params are valid, returns the user"
     },
     {
       "describe": "build/4",
-      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/users_test.exs",
-      "line": 22,
-      "module": "Elixir.Flightex.Users.UserTest",
-      "test": "test build/4 when cpf is a integer"
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/booking_test.exs",
+      "line": 7,
+      "module": "Elixir.Flightex.Bookings.BookingTest",
+      "test": "test build/4 when all params are valid, returns a booking"
     },
     {
       "describe": "get/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/user_agent_test.exs",
-      "line": 55,
+      "line": 42,
       "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is't founded, returns an error"
+      "test": "test get/1 when the user is found, returns the user"
     },
     {
       "describe": "save/1",
@@ -34,16 +41,9 @@
     {
       "describe": "get/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/user_agent_test.exs",
-      "line": 42,
+      "line": 55,
       "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is found, returns the user"
-    },
-    {
-      "describe": "build/4",
-      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/booking_test.exs",
-      "line": 7,
-      "module": "Elixir.Flightex.Bookings.BookingTest",
-      "test": "test build/4 when all params are valid, returns a booking"
+      "test": "test get/1 when the user is't founded, returns an error"
     },
     {
       "describe": "call/1",
@@ -55,9 +55,9 @@
     {
       "describe": "get/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/booking_agent_test.exs",
-      "line": 53,
+      "line": 34,
       "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the user wasn't found, returns an error"
+      "test": "test get/1 when the user is found, return a booking"
     },
     {
       "describe": "save/1",
@@ -69,16 +69,9 @@
     {
       "describe": "get/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/booking_agent_test.exs",
-      "line": 34,
+      "line": 53,
       "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the user is found, return a booking"
-    },
-    {
-      "describe": "generate/1",
-      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/report_test.exs",
-      "line": 15,
-      "module": "Elixir.Flightex.Bookings.ReportTest",
-      "test": "test generate/1 when called, return the content"
+      "test": "test get/1 when the user wasn't found, returns an error"
     },
     {
       "describe": "generate_report/2",
@@ -88,11 +81,11 @@
       "test": "test generate_report/2 when called, return the content filtered by date"
     },
     {
-      "describe": "call/1",
-      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/create_or_update_test.exs",
-      "line": 14,
-      "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
-      "test": "test call/1 when all params are valid, return a tuple"
+      "describe": "generate/1",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/report_test.exs",
+      "line": 15,
+      "module": "Elixir.Flightex.Bookings.ReportTest",
+      "test": "test generate/1 when called, return the content"
     },
     {
       "describe": "call/1",
@@ -100,6 +93,13 @@
       "line": 35,
       "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
       "test": "test call/1 when cpf is a integer, returns an error"
+    },
+    {
+      "describe": "call/1",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/create_or_update_test.exs",
+      "line": 14,
+      "module": "Elixir.Flightex.Users.CreateOrUpdateTest",
+      "test": "test call/1 when all params are valid, return a tuple"
     }
   ],
   "skiped": []
