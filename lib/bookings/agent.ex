@@ -19,4 +19,6 @@ defmodule Flightex.Bookings.Agent do
       booking -> {:ok, booking}
     end
   end
+
+  def all, do: Agent.get(__MODULE__, &Map.values(&1))
 end
