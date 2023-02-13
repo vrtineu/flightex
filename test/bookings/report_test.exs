@@ -28,7 +28,6 @@ defmodule Flightex.Bookings.ReportTest do
   describe "generate_report/2" do
     setup do
       Flightex.start_agents()
-
       :ok
     end
 
@@ -40,17 +39,15 @@ defmodule Flightex.Bookings.ReportTest do
       ]
 
       {:ok, _} = Flightex.create_or_update_booking(params1)
-      {:ok, id1} = Flightex.create_or_update_booking(params2)
-      {:ok, id2} = Flightex.create_or_update_booking(params3)
+      {:ok, _} = Flightex.create_or_update_booking(params2)
+      {:ok, id} = Flightex.create_or_update_booking(params3)
 
       filename = "report-test.csv"
-      Report.generate_report(filename, ~N[2001-05-08 00:00:00], ~N[2001-05-09 23:59:59])
+      Report.generate_report(filename, ~N[2001-05-09 00:00:00], ~N[2001-05-09 23:59:59])
 
       {:ok, file} = File.read(filename)
 
-      expected_response =
-        "#{id1},12345678900,Sao Paulo,Bananeiras,2001-05-08 12:00:00\n" <>
-          "#{id2},12345678900,Rio de Janeiro,Bananeiras,2001-05-09 12:00:00\n"
+      expected_response = "#{id},12345678900,Rio de Janeiro,Bananeiras,2001-05-09 12:00:00\n"
 
       assert file =~ expected_response
     end

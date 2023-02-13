@@ -1,14 +1,6 @@
 {
   "excluded": [],
-  "failed": [
-    {
-      "describe": "generate_report/2",
-      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/report_test.exs",
-      "line": 35,
-      "module": "Elixir.Flightex.Bookings.ReportTest",
-      "test": "test generate_report/2 when called, return the content filtered by date"
-    }
-  ],
+  "failed": [],
   "invalid": [],
   "passed": [
     {
@@ -42,16 +34,16 @@
     {
       "describe": "get/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/user_agent_test.exs",
-      "line": 55,
+      "line": 42,
       "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is't founded, returns an error"
+      "test": "test get/1 when the user is found, returns the user"
     },
     {
       "describe": "get/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/users/user_agent_test.exs",
-      "line": 42,
+      "line": 55,
       "module": "Elixir.Flightex.Users.AgentTest",
-      "test": "test get/1 when the user is found, returns the user"
+      "test": "test get/1 when the user is't founded, returns an error"
     },
     {
       "describe": "call/1",
@@ -68,6 +60,41 @@
       "test": "test call/1 when params are invalid, returns an error tuple"
     },
     {
+      "describe": "start_agents/0",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/flightex_test.exs",
+      "line": 5,
+      "module": "Elixir.FlightexTest",
+      "test": "test start_agents/0 starts the user and booking agents"
+    },
+    {
+      "describe": "create_or_update_user/1",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/flightex_test.exs",
+      "line": 16,
+      "module": "Elixir.FlightexTest",
+      "test": "test create_or_update_user/1 creates a user"
+    },
+    {
+      "describe": "generate_report/3",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/flightex_test.exs",
+      "line": 66,
+      "module": "Elixir.FlightexTest",
+      "test": "test generate_report/3 generates a report"
+    },
+    {
+      "describe": "generate/1",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/flightex_test.exs",
+      "line": 51,
+      "module": "Elixir.FlightexTest",
+      "test": "test generate/1 generates a report"
+    },
+    {
+      "describe": "create_or_update_booking/1",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/flightex_test.exs",
+      "line": 33,
+      "module": "Elixir.FlightexTest",
+      "test": "test create_or_update_booking/1 creates a booking"
+    },
+    {
       "describe": "save/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/booking_agent_test.exs",
       "line": 15,
@@ -77,16 +104,16 @@
     {
       "describe": "get/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/booking_agent_test.exs",
-      "line": 53,
+      "line": 34,
       "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the user wasn't found, returns an error"
+      "test": "test get/1 when the user is found, return a booking"
     },
     {
       "describe": "get/1",
       "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/booking_agent_test.exs",
-      "line": 34,
+      "line": 53,
       "module": "Elixir.Flightex.Bookings.AgentTest",
-      "test": "test get/1 when the user is found, return a booking"
+      "test": "test get/1 when the user wasn't found, returns an error"
     },
     {
       "describe": "generate/1",
@@ -94,6 +121,13 @@
       "line": 15,
       "module": "Elixir.Flightex.Bookings.ReportTest",
       "test": "test generate/1 when called, return the content"
+    },
+    {
+      "describe": "generate_report/2",
+      "file": "/home/vrtineu/Studies/elixir-ignite/flightex/test/bookings/report_test.exs",
+      "line": 34,
+      "module": "Elixir.Flightex.Bookings.ReportTest",
+      "test": "test generate_report/2 when called, return the content filtered by date"
     },
     {
       "describe": "call/1",
